@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A575E18194934D8004A1550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A575E17194934D8004A1550 /* Foundation.framework */; };
+		1A575E1A194934D8004A1550 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A575E19194934D8004A1550 /* CoreGraphics.framework */; };
+		1A575E1C194934D8004A1550 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A575E1B194934D8004A1550 /* UIKit.framework */; };
+		1A575E22194934D8004A1550 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A575E20194934D8004A1550 /* InfoPlist.strings */; };
+		1A575E24194934D8004A1550 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A575E23194934D8004A1550 /* main.m */; };
+		1A575E28194934D8004A1550 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A575E27194934D8004A1550 /* AppDelegate.m */; };
+		1A575E2B194934D8004A1550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A575E29194934D8004A1550 /* Main.storyboard */; };
+		1A575E2E194934D8004A1550 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A575E2D194934D8004A1550 /* ViewController.m */; };
+		1A575E30194934D8004A1550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A575E2F194934D8004A1550 /* Images.xcassets */; };
+		1A575E37194934D8004A1550 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A575E36194934D8004A1550 /* XCTest.framework */; };
+		1A575E38194934D8004A1550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A575E17194934D8004A1550 /* Foundation.framework */; };
+		1A575E39194934D8004A1550 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A575E1B194934D8004A1550 /* UIKit.framework */; };
+		1A575E41194934D8004A1550 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A575E3F194934D8004A1550 /* InfoPlist.strings */; };
+		1A575E43194934D8004A1550 /* AlphaTouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A575E42194934D8004A1550 /* AlphaTouchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A575E3A194934D8004A1550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A575E0C194934D8004A1550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A575E13194934D8004A1550;
+			remoteInfo = AlphaTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A575E14194934D8004A1550 /* AlphaTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A575E17194934D8004A1550 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A575E19194934D8004A1550 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A575E1B194934D8004A1550 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A575E1F194934D8004A1550 /* AlphaTouch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlphaTouch-Info.plist"; sourceTree = "<group>"; };
+		1A575E21194934D8004A1550 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A575E23194934D8004A1550 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A575E25194934D8004A1550 /* AlphaTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlphaTouch-Prefix.pch"; sourceTree = "<group>"; };
+		1A575E26194934D8004A1550 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A575E27194934D8004A1550 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A575E2A194934D8004A1550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A575E2C194934D8004A1550 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A575E2D194934D8004A1550 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A575E2F194934D8004A1550 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A575E35194934D8004A1550 /* AlphaTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlphaTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A575E36194934D8004A1550 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1A575E3E194934D8004A1550 /* AlphaTouchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlphaTouchTests-Info.plist"; sourceTree = "<group>"; };
+		1A575E40194934D8004A1550 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A575E42194934D8004A1550 /* AlphaTouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlphaTouchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A575E11194934D8004A1550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A575E1A194934D8004A1550 /* CoreGraphics.framework in Frameworks */,
+				1A575E1C194934D8004A1550 /* UIKit.framework in Frameworks */,
+				1A575E18194934D8004A1550 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A575E32194934D8004A1550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A575E37194934D8004A1550 /* XCTest.framework in Frameworks */,
+				1A575E39194934D8004A1550 /* UIKit.framework in Frameworks */,
+				1A575E38194934D8004A1550 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A575E0B194934D8004A1550 = {
+			isa = PBXGroup;
+			children = (
+				1A575E1D194934D8004A1550 /* AlphaTouch */,
+				1A575E3C194934D8004A1550 /* AlphaTouchTests */,
+				1A575E16194934D8004A1550 /* Frameworks */,
+				1A575E15194934D8004A1550 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A575E15194934D8004A1550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A575E14194934D8004A1550 /* AlphaTouch.app */,
+				1A575E35194934D8004A1550 /* AlphaTouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A575E16194934D8004A1550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A575E17194934D8004A1550 /* Foundation.framework */,
+				1A575E19194934D8004A1550 /* CoreGraphics.framework */,
+				1A575E1B194934D8004A1550 /* UIKit.framework */,
+				1A575E36194934D8004A1550 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A575E1D194934D8004A1550 /* AlphaTouch */ = {
+			isa = PBXGroup;
+			children = (
+				1A575E26194934D8004A1550 /* AppDelegate.h */,
+				1A575E27194934D8004A1550 /* AppDelegate.m */,
+				1A575E29194934D8004A1550 /* Main.storyboard */,
+				1A575E2C194934D8004A1550 /* ViewController.h */,
+				1A575E2D194934D8004A1550 /* ViewController.m */,
+				1A575E2F194934D8004A1550 /* Images.xcassets */,
+				1A575E1E194934D8004A1550 /* Supporting Files */,
+			);
+			path = AlphaTouch;
+			sourceTree = "<group>";
+		};
+		1A575E1E194934D8004A1550 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A575E1F194934D8004A1550 /* AlphaTouch-Info.plist */,
+				1A575E20194934D8004A1550 /* InfoPlist.strings */,
+				1A575E23194934D8004A1550 /* main.m */,
+				1A575E25194934D8004A1550 /* AlphaTouch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A575E3C194934D8004A1550 /* AlphaTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A575E42194934D8004A1550 /* AlphaTouchTests.m */,
+				1A575E3D194934D8004A1550 /* Supporting Files */,
+			);
+			path = AlphaTouchTests;
+			sourceTree = "<group>";
+		};
+		1A575E3D194934D8004A1550 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A575E3E194934D8004A1550 /* AlphaTouchTests-Info.plist */,
+				1A575E3F194934D8004A1550 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A575E13194934D8004A1550 /* AlphaTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A575E46194934D8004A1550 /* Build configuration list for PBXNativeTarget "AlphaTouch" */;
+			buildPhases = (
+				1A575E10194934D8004A1550 /* Sources */,
+				1A575E11194934D8004A1550 /* Frameworks */,
+				1A575E12194934D8004A1550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlphaTouch;
+			productName = AlphaTouch;
+			productReference = 1A575E14194934D8004A1550 /* AlphaTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A575E34194934D8004A1550 /* AlphaTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A575E49194934D8004A1550 /* Build configuration list for PBXNativeTarget "AlphaTouchTests" */;
+			buildPhases = (
+				1A575E31194934D8004A1550 /* Sources */,
+				1A575E32194934D8004A1550 /* Frameworks */,
+				1A575E33194934D8004A1550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A575E3B194934D8004A1550 /* PBXTargetDependency */,
+			);
+			name = AlphaTouchTests;
+			productName = AlphaTouchTests;
+			productReference = 1A575E35194934D8004A1550 /* AlphaTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A575E0C194934D8004A1550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Joe Puzzo";
+				TargetAttributes = {
+					1A575E34194934D8004A1550 = {
+						TestTargetID = 1A575E13194934D8004A1550;
+					};
+				};
+			};
+			buildConfigurationList = 1A575E0F194934D8004A1550 /* Build configuration list for PBXProject "AlphaTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A575E0B194934D8004A1550;
+			productRefGroup = 1A575E15194934D8004A1550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A575E13194934D8004A1550 /* AlphaTouch */,
+				1A575E34194934D8004A1550 /* AlphaTouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A575E12194934D8004A1550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A575E30194934D8004A1550 /* Images.xcassets in Resources */,
+				1A575E22194934D8004A1550 /* InfoPlist.strings in Resources */,
+				1A575E2B194934D8004A1550 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A575E33194934D8004A1550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A575E41194934D8004A1550 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A575E10194934D8004A1550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A575E2E194934D8004A1550 /* ViewController.m in Sources */,
+				1A575E28194934D8004A1550 /* AppDelegate.m in Sources */,
+				1A575E24194934D8004A1550 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A575E31194934D8004A1550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A575E43194934D8004A1550 /* AlphaTouchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A575E3B194934D8004A1550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A575E13194934D8004A1550 /* AlphaTouch */;
+			targetProxy = 1A575E3A194934D8004A1550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A575E20194934D8004A1550 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A575E21194934D8004A1550 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A575E29194934D8004A1550 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A575E2A194934D8004A1550 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A575E3F194934D8004A1550 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A575E40194934D8004A1550 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A575E44194934D8004A1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A575E45194934D8004A1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A575E47194934D8004A1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphaTouch/AlphaTouch-Prefix.pch";
+				INFOPLIST_FILE = "AlphaTouch/AlphaTouch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A575E48194934D8004A1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphaTouch/AlphaTouch-Prefix.pch";
+				INFOPLIST_FILE = "AlphaTouch/AlphaTouch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A575E4A194934D8004A1550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AlphaTouch.app/AlphaTouch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphaTouch/AlphaTouch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AlphaTouchTests/AlphaTouchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1A575E4B194934D8004A1550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AlphaTouch.app/AlphaTouch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphaTouch/AlphaTouch-Prefix.pch";
+				INFOPLIST_FILE = "AlphaTouchTests/AlphaTouchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A575E0F194934D8004A1550 /* Build configuration list for PBXProject "AlphaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A575E44194934D8004A1550 /* Debug */,
+				1A575E45194934D8004A1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A575E46194934D8004A1550 /* Build configuration list for PBXNativeTarget "AlphaTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A575E47194934D8004A1550 /* Debug */,
+				1A575E48194934D8004A1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A575E49194934D8004A1550 /* Build configuration list for PBXNativeTarget "AlphaTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A575E4A194934D8004A1550 /* Debug */,
+				1A575E4B194934D8004A1550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A575E0C194934D8004A1550 /* Project object */;
+}

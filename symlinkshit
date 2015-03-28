@@ -1,0 +1,12 @@
+bash-3.2$ man ln
+bash-3.2$ rm python
+override rwxr-xr-x  root/wheel compressed for python? ^C
+bash-3.2$ sudo rm python
+bash-3.2$ ln -s python /usr/local/bin/python3
+ln: /usr/local/bin/python3: File exists
+bash-3.2$ ln -s /usr/local/bin/python3 python
+ln: python: Permission denied
+bash-3.2$ sudo ln -s /usr/local/bin/python3 python
+bash-3.2$ python -V
+Python 3.4.2
+

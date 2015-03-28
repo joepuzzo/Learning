@@ -1,0 +1,9 @@
+
+
+(gdb) list :to list program
+(gdb) disassemble main: show the assem of the main function 
+(gdb) x/xw $reg: examine a register in words and print in hex  
+(gdb) x/6cb 0x80484884: examine an address in bytes and print in chars  
+(gdb) i r $reg: info register  
+(gdb) x/ 2i $eip :print out the next two instrictions refed by the ip
+(gdb) bt :backtrace of the stack 

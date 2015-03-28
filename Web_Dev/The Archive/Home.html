@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Archive</title>
+
+	<link href="Style.css" rel="stylesheet" />
+	
+	<!-- Joe added this -->
+	<!-- NOTE: the line directly below pulls in the j-query libraries you should download them from somewhere and put them in your directory -->
+    <script type="text/javascript" src="jquery-1.11.2.js"></script>
+    
+    <!-- This line pulls in the .js file ... you should do the same for the script below -->
+	<script type="text/javascript" src="query.js"></script>
+	
+	<script type="text/javascript" src="rssmikle.js"></script>
+	
+	
+	<script>  
+	            function drawTextAlongArc(context, str, centerX, centerY, radius, angle){  
+	                context.save();  
+	                context.translate(centerX, centerY);  
+	                context.rotate(-1 * angle / 2);  
+	                context.rotate(-1 * (angle / str.length) / 1);  
+	                for (var n = 0; n < str.length; n++) {  
+	                    context.rotate(angle / str.length);  
+	                    context.save();  
+	                    context.translate(0, -1 * radius);  
+	                    var char = str[n];  
+	                    context.fillText(char, 0, 0);  
+	                    context.restore();
+	                      
+	                }  
+	                context.restore();  
+	            }  
+	              
+	            window.onload = function(){  
+	                var canvas = document.getElementById("myCanvas");  
+	                var context = canvas.getContext("2d");  
+	                  
+	                context.font = "15pt Futura";  
+	                context.fillStyle = "#00B9BC";
+	                
+	                  
+	                var centerX = canvas.width / 2;  
+	                var centerY = canvas.height - 30;  
+	                var angle = Math.PI * 0.8; // radians  
+	                var radius = 90;  
+	                drawTextAlongArc(context, "Scroll Down", centerX, centerY, radius, angle);  
+	            };  
+	            
+	        </script>  
+	         
+	</head> 
+
+	<body id="title">
+        	
+			<div class="image">
+            	
+            	<img src="snow.jpg" style="width: 99.4%; height: 696px;">
+            	<div class="text">
+                    <h2>The Archive</h2>
+                    
+                </div>
+             </div>
+                    
+                    <img src="line.gif" style="width: 950px; height: 45px; position: absolute; left: 60%; top: 10%; ">
+                   
+                    <div class="rotate">
+                    <p>Originality.Simplicity.Music</p>
+                    </div>
+           </div>
+
+                 
+       			 <img src="feather.png" style="width: 150px; height: 150px; position: absolute; left: 66%; top: 3%; ">
+                 <a href="#scrolldown"><img class="fade" src="down.png" style="width: 150px; height: 150px; position: absolute; left: 45%; top: 20%; ">
+
+				<canvas id="myCanvas" width="578" height="250" ></canvas></a>
+				
+				<div class="icon">
+					<!-- The Class "fade" is used in the query file to access these logo's -->
+					<img class="fade" src="facebook.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: -50px; ">
+					<img class="fade" src="twitter.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: 70px; ">
+					<img class="fade" src="youtube.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: 190px; ">
+					<img class="fade" src="soundcloud.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: 310px; ">
+				</div>
+            
+            
+            <a name="scrolldown">
+            
+            <div class="image2">
+            	<img src="palm.jpg ">
+            </div>
+            	
+            	<div class="text2">
+                    <h2>Featured</h2>
+                </div>
+            
+            <div class="text4">
+                <h1>Tracks & Artists</h1>
+            </div>
+            
+            
+         <div class="image4">   
+         <a href="http://www.freshnewtracks.com"><img class="fade" src="blue.png" style="width: 350px; height: 350px; "></a>
+         </div>
+         
+         <div class="image5">
+         <a href="http://www.thekollection.com"><img class="fade" src="diamond.png" style="width: 400px; height: 400px; "></a>
+         </div>
+     
+        
+         <div class="image6">
+         <a href="http://www.fistintheair.com"><img class="fade" src="fist.png" style="width: 350px; height: 350px; "></a>
+         <div class="text3">
+             <h1>FistInTheAir</h1>
+             </div>
+         
+         </div>
+         
+            <div class="image3">
+            		<img src="fresh.jpg" style="width: 32.97%; height: 400px;">
+            		<img src="kollection.jpg" style="width: 32.97%; height: 400px;">
+            		<img src="gradient.jpg" style="width: 32.8%; height: 400px;">
+            </div>		
+            
+         
+  	   <div class="feed1">
+  	   
+		<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.freshnewtracks.com",rssmikle_frame_width: "471px",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:477px;"></div>
+            		         
+          </div>
+          
+          
+          <div class="feed2">
+          
+		<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.thekollection.com",rssmikle_frame_width: "470px",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:477px;"></div>
+			
+         </div>
+         
+          
+                      <div class="feed3">
+                        		         
+					<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.fistintheair.com",rssmikle_frame_width: "470",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:477px;"></div>
+                        
+                        </div>
+                        
+
+                    <div class="image3">
+                            <img src="wood.jpg" style="width: 32.97%; height: 400px;">
+                            <img src="black.jpg" style="width: 32.97%; height: 400px;">   	
+                    </div>
+                        
+       							<div class="image7">
+       							<a href="http://www.hypefloats.com"><img class="fade" src="hf.png" style="width: 350px; height: 350px; "></a>
+       							</div>
+       							
+       								<div class="image8">
+       								<a href="http://www.themaskedgorilla.com"><img class="fade" src="gorilla.jpg" style="width: 350px; height: 350px; "></a>
+       								</div>
+       							
+       								<div class="image9">
+       								<a href="http://www.biggreenbeats.com.com"><img class="fade" src="bgb.png" style="width: 350px; height: 350px; "></a>
+       								</div>
+       							
+       			<div class="feed4">
+       			
+				<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.hypefloats.com",rssmikle_frame_width: "477",rssmikle_frame_height: "405",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:477px;"></div>
+       							          		                							        
+       				</div>
+       		
+  </body>
+</html>
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Archive</title>
+
+	<link href="Style.css" rel="stylesheet" />
+	
+	    <script type="text/javascript" src="jquery-1.11.2.js"></script>
+	    
+	    	<script type="text/javascript" src="query.js"></script>
+	    	
+	    		<script type="text/javascript" src="rssmikle.js"></script>
+	   </head> 		
+	    		
+	    	<body>
+	    	    	
+	    			<div>
+	    			
+	    	        	<img src="snow.jpg" class="image" >
+	    	        	
+	    	        	<div class="text">
+	    	                <h2>The Archive</h2>
+	    	            </div>
+	    	            
+	    	         </div>
+	    	         
+	    	        
+	    		<img src="line.gif" style="width: 950px; height: 45px; position: absolute; left: 15%; top: 47%; ">	
+	    		
+	    		<div class="rotate">
+	    		<p>Originality.Simplicity.Music</p>
+	    		</div>
+	    		
+	    		<img src="feather.png" style="width: 150px; height: 150px; position: absolute; left: 69.5%; top: 14%; ">
+	    		
+	    		<script>  
+	    		            function drawTextAlongArc(context, str, centerX, centerY, radius, angle){  
+	    		                context.save();  
+	    		                context.translate(centerX, centerY);  
+	    		                context.rotate(-1 * angle / 2);  
+	    		                context.rotate(-1 * (angle / str.length) / 1);  
+	    		                for (var n = 0; n < str.length; n++) {  
+	    		                    context.rotate(angle / str.length);  
+	    		                    context.save();  
+	    		                    context.translate(0, -1 * radius);  
+	    		                    var char = str[n];  
+	    		                    context.fillText(char, 0, 0);  
+	    		                    context.restore();
+	    		                      
+	    		                }  
+	    		                context.restore();  
+	    		            }  
+	    		              
+	    		            window.onload = function(){  
+	    		                var canvas = document.getElementById("myCanvas");  
+	    		                var context = canvas.getContext("2d");  
+	    		                  
+	    		                context.font = "15pt Futura";  
+	    		                context.fillStyle = "#00B9BC";
+	    		                
+	    		                  
+	    		                var centerX = canvas.width / 2;  
+	    		                var centerY = canvas.height - 30;  
+	    		                var angle = Math.PI * 0.8; // radians  
+	    		                var radius = 90;  
+	    		                drawTextAlongArc(context, "Scroll Down", centerX, centerY, radius, angle);  
+	    		            };  
+	    		            
+	    		        </script>  
+	    		
+	    		
+	    		<a href="#scrolldown">
+	    		<img class="fade" src="down.png" style="width: 150px; height: 150px; position: absolute; left: 45%; top: 70%; "></a>
+	    		
+	    		<div class="icon">
+	    			<img class="fade" src="facebook.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: -50px; ">
+	    			<img class="fade" src="twitter.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: 70px; ">
+	    			<img class="fade" src="youtube.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: 190px; ">
+	    			<img class="fade" src="soundcloud.png" style="width: 100px; height: 100px; position: absolute; left: 925px; top: 310px; ">
+	    		</div>
+	    		
+	    		
+	    		<a name="scrolldown">
+	    		
+	    		<div>
+	    			<img src="palm.jpg" class="image2">
+	    		</div>
+	    		
+	    		
+	    		<div>
+	    		    <h2 class="text2">Featured</h2>
+	    		</div>
+	    		
+	    		
+	    		<div>
+	    		    <h1 class="text4">Tracks & Artists</h1>
+	    		</div>
+	    		
+	<div class="set1">
+	    		
+	    		<div>
+	    				<img class="image3" src="fresh.jpg" style="width: 33.1%; height: 400px;">
+	    				<img class="image3" src="kollection.jpg" style="width: 33.1%; height: 400px;">
+	    				<img class="image3" src="gradient.jpg" style="width: 33.2%; height: 400px;">
+	    		</div>	
+	    		
+	    	
+	    	<div class="fade">
+	    		    <div>   
+	    		    <a href="http://www.freshnewtracks.com"><img class="image4" src="blue.png" style="width: 350px; height: 350px; "></a>
+	    		    </div>
+	    	</div>
+	    		    
+	    		    
+	    	<div class="fade">	    
+	    		    <div>
+	    		    <a href="http://www.thekollection.com"><img class="image5" src="diamond.png" style="width: 400px; height: 400px; "></a>
+	    		    </div>
+	    	</div>	
+	    		   
+	    		   
+	    	<div class="fade">	   
+	    		    <div>
+	    		    <a href="http://www.fistintheair.com"><img class="image6" src="fist.png" style="width: 350px; height: 350px; "></a>
+	    		        <div>
+	    		        <h1 class="text3">FistInTheAir</h1>
+	    		        </div>
+	    		    
+	    		    </div>
+	    	</div>
+	    		
+	    		    <div class="feed1">
+	    		      
+	    		    	<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.freshnewtracks.com",rssmikle_frame_width: "471px",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "200",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+	    		         		         
+
+	    				<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.thekollection.com",rssmikle_frame_width: "471px",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+	    			
+		         
+	    			 	<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.fistintheair.com",rssmikle_frame_width: "473",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+	    			     
+	    			     </div>
+	 </div>   			     
+	    			     <div>
+	    			             <img src="wood.jpg" class="image11" style="width: 33.1%; height: 400px;">
+	    			             <a href="http://www.rnbxclusive.com"><img src="rnb.jpg" class="image11" style="width: 33.1%; height: 400px;"></a>
+	    			             <a href="http://www.dml.fm"><img src="dml.jpg" class="image11" style="width: 33.2%; height: 400px;"></a>
+	    			                	
+	    			     </div>
+	    		
+	    			<div class="fade">
+	    			<a href="http://www.hypefloats.com"><img class="image7" src="hf.png"></a>
+	    			</div>
+	    			
+	    				<div class="fade">
+	    				<a href="http://www.themaskedgorilla.com"><img class="image8" src="gorilla.jpg"></a>
+	    				</div>
+	    			
+	    				<div class="fade">
+	    				<a href="http://www.biggreenbeats.com.com"><img class="image9" src="bgb.png"></a>
+	    				</div>
+	    				
+	    				
+	    				<div class="feed2">
+	    					
+	    				<script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.hypefloats.com",rssmikle_frame_width: "471",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+	    				
+	    				<script type="text/javascript">(function() {var params = {rssmikle_url: "http://rnbxclusive.se",rssmikle_frame_width: "471",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+	    				
+	    				<script type="text/javascript">(function() {var params = {rssmikle_url: "http://rnbxclusive.se",rssmikle_frame_width: "471",rssmikle_frame_height: "500",frame_height_by_article: "",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script>
+	    				
+	    				</div>
+	    		
+	    		<div>
+	    		        <img src="wood.jpg" class="image11" style="width: 33.1%; height: 400px;">
+	    		        <img src="black.jpg" class="image11" style="width: 33.1%; height: 400px;">
+	    		        <img src="black.jpg" class="image11" style="width: 33.2%; height: 400px;">   	
+	    		</div>
+	    		
+</body>
+</html>

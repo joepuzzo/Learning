@@ -1,0 +1,88 @@
+<!-- HTML Overview -->
+
+<!DOCTYPE html>
+
+<html>
+
+<!-- The <head> element is a container for all the head elements. Elements inside <head> can include scripts, instruct the browser where to find style sheets, provide meta information, and more. -->
+<head> 
+  
+  <link type="text/css" rel="stylesheet" href="stylesheet.css">
+	<title>Title of the document</title>
+
+	<!-- Internal Style Sheet -->
+	<style>
+	body {background-color:white;}
+	p {color:blue;}
+	</style>
+
+	<!-- External Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+<body>
+
+<p> my first paragraph </p>
+<p> paragraph with a line break <br> in the middle </p>
+
+<!-- Link With text -->
+<a href="url"> Link text </a>
+
+<!-- Link With image -->
+<a href="url"> <img src="smiley.gif" alt="HTML tutorial" width="42" height="42"> </a>
+
+<!-- Inline CSS/Styling -->
+<h1 style="font-family:verdana;">A heading</h1>
+<p style="font-family:arial;color:red;font-size:20px;">A paragraph.</p>
+
+<!-- Table Example  -->
+<table style="width:300px">
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>		
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td>		
+  <td>94</td>
+</tr>
+<tr>
+  <td>John</td>
+  <td>Doe</td>		
+  <td>80</td>
+</tr>
+</table>
+
+<!-- Div Example  -->
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">Main Title of Web Page</h1></div>
+
+<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+<b>Menu</b><br>
+HTML<br>
+CSS<br>
+JavaScript</div>
+
+<div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+Content goes here</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+Copyright © W3Schools.com</div>
+
+</div>
+
+
+<form action="demo_form.asp">
+First name: <input type="text" name="FirstName" value="Mickey"><br>
+Last name: <input type="text" name="LastName" value="Mouse"><br>
+<input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the server called "demo_form.asp".</p>
+
+</body>
+</html>

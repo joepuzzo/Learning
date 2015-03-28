@@ -1,0 +1,11 @@
+#!/bin/bash
+echo 'Enter a regex: '
+read regex
+echo 'Enter a replacement: '
+read replace
+
+for i in $(ls); do
+    sed -E 's/'$regex'/'$replace'/' $i > new 
+    echo "New is: $new"
+done 
+
