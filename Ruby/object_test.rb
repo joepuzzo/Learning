@@ -48,6 +48,8 @@ class Rabbit < ExtendMe
 
   def initialize(name)
     @name = name
+    puts "Created new rabbit #{@name}"
+    super(5)
   end
 
   def test

@@ -1,0 +1,45 @@
+/*----------------------Structures-----------------------*/
+
+/*----------Message Structure----------*/
+{ "Message": {
+    "magic": { 
+        "example": "main",
+        "type" : "unit32_t", 
+        "description": "indicates network origin"
+    }
+    "command": {
+        "example": "version",
+        "type" : "char[12]",
+        "description": "identifies packet content"
+    }
+    "length": {
+        "example": "31",
+        "type" : "unit32_t",
+        "description": "payload length of the packet in #of bytes"
+    }
+    "checksum": {
+        "example": "TODO",
+        "type" : "unit32_t",
+        "description": "first 4 bytes of sha256(sha256(payload))"
+    }
+    "payload": {
+        "example": "NONE",
+        "type" : "uchar[]",
+        "description": "actual data"
+    }"
+}}
+
+
+/*----------Message Structure----------*/
+{ "Message": {
+    "magic": { 
+        "example": "main",
+        "type" : "unit32_t", 
+        "description": "indicates network origin"
+    }
+ 
+
+
+
+         
+

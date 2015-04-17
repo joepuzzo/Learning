@@ -1,0 +1,21 @@
+body {
+  padding-top: 50px;
+}
+
+.page_title {
+  padding: 40px 15px;
+  text-align: center;
+  color: blue;
+}
+
+#profile-image {
+	top: 30%;
+	width: 300px;
+	height: auto;
+	border: 3px solid #333;
+}
+
+
+.dog_text {
+	color: red;
+}
