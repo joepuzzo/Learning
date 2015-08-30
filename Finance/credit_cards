@@ -1,0 +1,42 @@
+==========================================================
+APR: Anual Percentage Rate
+
+Example: 
+
+    APR = 22.9% Anual ( 0.06274 % daily percentage rate )
+      
+    Note: 0.06274 * 365 = 22.9% 
+
+    Effective APR = (1.0006274)^356 = 1.257 = 25.7%   
+
+===========================================================
+Institutional roles in issueing and processing credit cards
+
+Processors: [ Visa, Mastercard, Amex, ... ] 
+
+Issuer: Gives out credit cards to customers ( bank ) 
+
+Aquirer: Allows credit cards to be accepted ( bank ) 
+
+Discount Rate: money taken from purchase and distributed to various
+               parts of the credit card system
+
+Interchage Fee: Amount payed to aquirer and processor 
+
+
+Example: I buy $100 of stuff! 2% discount rate 
+    
+    Me ------ [Credit Card] -> Store 
+    My Bank - [$1.7] --------> Itself
+    My Bank - [$98.30 -------> Visa
+    Visa ---- [$.1] ---------> Itself
+    Visa ---- [$98.20 -------> Aquirer Bank
+
+===========================================================
+Payday Loan
+
+Example: I borrow $500 
+
+    Data: [ PayStub, PayDate, BankStatement ]   
+
+

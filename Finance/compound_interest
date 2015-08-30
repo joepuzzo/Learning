@@ -1,0 +1,18 @@
+==================================================
+Rule of 72
+
+
+Formula: 
+
+    i = % interest
+    d = time to double your money : ( years | months | ... )
+
+    72 / i = d
+
+Example:
+
+    i = %10
+
+    72 / 10 = d 
+            = 7.2 
+
