@@ -20,10 +20,13 @@ end
 
 cust2 = StructCustomer.new( "bob", "123 somwhere in the world dr" )
 
+puts "-------------Basic Struct------------"
 puts cust2.name
 puts cust2.address 
 puts cust2[:name]
 puts cust2["address"]
+
+puts "-----------------End-----------------"
 
 #With defaults!----------------------
 class DefaultCustomer < Struct.new( :name, :address ) 
@@ -35,9 +38,25 @@ end
 
 cust3 = DefaultCustomer.new()
 
-puts cust2.name
-puts cust2.address 
-puts cust2[:name]
-puts cust2["address"]
+puts cust3.name
+puts cust3.address 
+puts cust3[:name]
+puts cust3["address"]
+
+
+puts "-----------------Test Defaults-----------------"
+cust4 = DefaultCustomer.new( name: "Joe", address: "111 Lakewood drive")
+
+puts cust4.name
+puts cust4.address
+puts cust4[:name]
+puts cust4["address"]
+
+
+
+
+
+
+
 
 

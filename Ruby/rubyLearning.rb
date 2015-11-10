@@ -57,6 +57,13 @@ frequencies = Hash.new(0) #Initialize an empy hash with all zeros
 def what_up(greeting, *bros)
   bros.each { |bro| puts "#{greeting}, #{bro}!" }
 end
+
+#Splat arguments!!
+def what_up(greeting, *bros)
+   bros.each do |bro| 
+     puts "#{greeting}, #{bro}!" }
+   end
+end
  
 what_up("What up", "Justin", "Ben", "Kevin Sorbo")
 
@@ -166,6 +173,14 @@ end
 puts batman_ironman_lambda
 
 
+#Passing Functions=================================================
+def bar(&block)
+    p 'bar'
+    block.call()
+end
 
+def foo()
+  p 'foo'
+end
 
-
+bar(&method(:foo))

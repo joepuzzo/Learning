@@ -1,0 +1,26 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Specifies to have during tests ( not required for building or running )
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    // Specifies to have during compile time
+    compile "joda-time:joda-time:2.2"
+}
+
+// How the JAR file will be named
+// in this case it will be gs-gradle-0.1.0.jar
+jar {
+    baseName = 'gj-gradle'
+    version = '0.1.0'
+}
+
