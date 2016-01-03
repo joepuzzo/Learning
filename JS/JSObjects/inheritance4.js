@@ -3,15 +3,23 @@
 
 // Note we can define the prototype before the constructor
 Shoe.prototype = {
-    putOn: function( ) { console.log("Shoe's on!"); }
+    putOn: function( ) { 
+        console.log("Shoe's on!"); 
+    },
+    tie: function() { 
+    } 
 } 
+
+Shoe.prototype.polish = function( shine ) { 
+
+}; 
 
 function Shoe( size, color ) { 
     this.size = size;
     this.color = color;
-    putOn();
+    this.putOn();
 }
 
-// This will def work
+// This will work!
 test3 = new Shoe( 10, "blue");
 test3.putOn();

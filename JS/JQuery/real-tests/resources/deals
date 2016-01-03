@@ -1,0 +1,14 @@
+[
+  {
+    name: 'Paris, France',
+    price: 550
+  },
+  {
+    name: 'Madrid, Spain',
+    price: 460
+  },
+  {
+    name: 'New York, United States',
+    price: 334
+  }
+]

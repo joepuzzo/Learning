@@ -19,20 +19,23 @@ function Boot( size ) {
 /* You have to create a new instance of a shoe 
    To inherit the constructor 
    Rather than: Boot.prototype = Object.create( Shoe.prototype  );*/
-Boot.prototype = Object.create( new Shoe() );
+Boot.prototype = new Shoe();
 
-boot = new Boot();
+boot = new Boot( 4 );
 
 console.log(boot);
 
 boot.putOn();
 
+// Size will be undefined because it has no default value
 console.log( "BOOT SIZE: " + boot.size ); 
 boot.size = 11
 console.log( "BOOT SIZE: " + boot.size ); 
 
+// Loc will be defined because it is set in the Shoe Class
 console.log( "BOOT LOC: " +  boot.loc ); 
 
+// Sex is not part of either 
 console.log( "BOOT SEX: " + boot.sex ); 
 boot.sex = "male"
 console.log( "BOOT SEX: " + boot.sex ); 

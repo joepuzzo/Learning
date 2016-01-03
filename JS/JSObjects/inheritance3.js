@@ -10,6 +10,7 @@ function Shoe1( size, color ) {
     this.size = size
     this.color = color
     this.some_const = 10
+    this.putOn = function(){ console.log("shoes on!"); };
 }
 
 // Now create a new shoe object
@@ -27,7 +28,8 @@ console.log("\n")
 
 // Note we can define the prototype before the constructor because the constructor is hoisted
 Shoe.prototype = {
-    some_const: 20
+    some_const: 20,
+    putOn: function(){ console.log("shoes on!"); } 
 } 
 
 // Shoe constructor
@@ -36,16 +38,25 @@ function Shoe( size, color ) {
     this.color = color;
 }
 
-// Now create two shoe objects and reset one of there some_consts 
+Shoe.heel = 2; 
+Shoe.wash = function() { console.log("soap!"); };
+
+// Now create two shoe objects and reset one of their some_consts 
 test2 = new Shoe( 10, "blue");
 test3 = new Shoe( 10, "yellow");
-test3.some_const = 30
+test3.heel = 5;
+test3.some_const = 30;
+test3.putOn = function(){ console.log("shoes on 2.0"); };
 
 console.log("\nMethod2 - using prototype object2:");
 console.log("The object: ")
 console.log( test2 );
 console.log("The constant: ")
 console.log( test2.some_const );
+console.log("I can try to set the static variable incorrectly: ")
+console.log( test2.heel );
+console.log("The static variable: ")
+console.log( Shoe.heel );
 console.log("\n")
 
 console.log("\nMethod2 - using prototype object3:");
@@ -53,6 +64,8 @@ console.log("The object: ")
 console.log( test3 );
 console.log("The constant: ")
 console.log( test3.some_const );
+console.log("The static variable: ")
+console.log( test3.heel );
 console.log("\n")
 
 // If you run this you will see that the variable is no longer "part" of that object but is instead a part of 

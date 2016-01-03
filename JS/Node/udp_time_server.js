@@ -6,7 +6,7 @@ var dgram = require('dgram');
 var now = function() {
   console.log('client connected');
   var date = new Date();
-  date.setFullYear(2014);
+  //date.setFullYear(2014);
   return new Buffer(date.toUTCString() + "\r\n");
 };
 

@@ -2,7 +2,7 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var mystr = "Hello, playground"
 
 //Typical loop
 for var i = 0; i < 100; i++ {
@@ -14,17 +14,17 @@ var myCollection1 = 1...100 //Closed range i.e 1 to 100 inclusive
 var myCollection2 = 1..<100 // 1 to 99
 
 for item in myCollection1 {
-    println("Item is: \(item)")
+    print("Item is: \(item)")
 }
 
 //Iterate over chars in string! 
-for char in str {
-    println("\(char)")
+for char in mystr.characters {
+    print("\(char)")
 }
 
 //While loop
 var condition = 0
 while condition < 100 {
-    println("Hello World!")
+    print("Hello World!")
     condition++
 }

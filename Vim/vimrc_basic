@@ -7,6 +7,7 @@ syntax enable
 
 "Activates colorscheme
 colorscheme molokai
+"colorscheme lettuce
 
 "Activates four spaced tabs
 set smartindent
@@ -21,7 +22,7 @@ map <C-a> <Home>
 map <C-e> <End>
 
 " key remapping
-"set pastetoggle=<C-v>
+set pastetoggle=<C-v>
 
 "Make cursor go faster
 set ttyfast
