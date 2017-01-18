@@ -1,0 +1,6 @@
+{
+  "name": "app-wct",
+  "short_name": "app-wct",
+  "start_url": "/",
+  "display": "standalone"
+}

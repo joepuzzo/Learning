@@ -1,0 +1,173 @@
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="hello-element">
+    <template>
+        Message: [[message]]
+        <br>
+        <paper-input value="{{message}}"></paper-input>
+        <br>
+        <input value="{{message::input}}">
+        <br>
+        <br>
+        Computed Message: [[computedMessage]]
+        <br>
+        <br>
+        Todays date is: [[date]]
+        <br>
+        <br>
+        MessageObj.foo: [[messageObj.foo]]
+        <br>
+        <h5 style$="[[messageStyle]]">[[message]]</h5> <!-- Need the dollar sign to reflect style-->
+        <h5 class="alertHead">[[message]]</h5>
+        <h5 on-tap="headerTapped">TAP ME!</h5>
+        <h5 id="tap2">TAP ME2!</h5>
+        <template is="dom-repeat" items="{{messages}}">
+            <br>
+            Index of message: {{index}}
+            <br>
+            Message: {{item}}
+            <br>
+        </template>
+        <template is="dom-repeat" items="{{messagePriorities}}" as="priority">
+           <p>
+             {{priority.name}}<br/>
+             <template is="dom-repeat" items="{{priority.levels}}" as="level" index-as="level_index">
+               {{level_index}} : {{level}}<br/>
+             </template>
+           </p>
+       </template>
+       <paper-button>CLICK ME!</paper-button>
+       <content></content>
+       <style>
+            .alertHead {
+                color: red;
+            }
+       </style>
+    </template>
+</dom-module>
+
+<script type="text/javascript">
+
+    class Hello {
+
+        beforeRegister() {
+            this.is = "hello-element";
+
+            this.listeners = {
+                'tap': 'regularTap',
+                'tap2.tap': 'subelementTap'
+            }
+
+            this.properties = {
+                message: {
+                    type: String,
+                    value: "Default",
+                    reflectToAttribute: true,
+                    notify: true,
+                    observer: 'messageChanged'
+                },
+                date: {
+                    type: Date,
+                    value: ()=> {
+                        return new Date();
+                    }
+                },
+                isSuccess: { //Will render as is-success && will only appar if set to true
+                    type: Boolean,
+                    value: true,
+                    reflectToAttribute: true
+                },
+                messageObj: {
+                    type: Object,
+                    value: { foo: "Hello", bar: "World!" }, // This will be shared for all instances
+                    reflectToAttribute: true
+                },
+                messageInstanceObj: {
+                    type: Object,
+                    value: function() {
+                        return { foo: "Hello", bar: "World!" }; // This will be unique for all instances
+                    },
+                    reflectToAttribute: true
+                },
+                computedMessage: {
+                    type: String,
+                    computed: 'computeMessage(message)' // The varialbe name is important here!
+                },
+                messages: {
+                    type: Array,
+                    value: ["Message1", "Message2"]
+                },
+                messagePriorities:{
+                    type: Array,
+                    value: function(){
+                        return [{name: "Major", levels: ["Super major", "Kind of a major"]},
+                                {name: "Minor", levels: ["Minorish", "Good to have"]}
+                               ];
+                      }
+                },
+                messageStyle: {
+                    type: String,
+                    value: 'color: blue'
+                }
+            };
+        }
+
+        computeMessage( mesg ) {
+            return /^[A-Z]*$/.test( mesg ) ? "Your message is upper case!" : "Your message is NOT all upper case :(";
+        }
+
+        created() {
+             console.log("Created: The element has been created.");
+         }
+
+         ready() {
+             console.log("Ready: Property values set and local DOM is initialized.");
+
+             // This event listener will work if notify is set to true
+             this.addEventListener("message-changed", function( event ) {
+                 console.log("Message Changed Event");
+             })
+             //this.messageObj.foo = "Goodbye";         //This will NOT work becuase only setter for whole obj
+             //this.messageObj = { foo: "Goodbye" };    //This will work becuase setter for whole obj
+             this.set( "messageObj.foo", "Goodbye" );   //This will work becuase setter for whole obj
+         }
+
+         attached() {
+             console.log("Attached: The element is attached to the document." +
+                 "Can be called multiple times.");
+         }
+
+         detached() {
+             console.log("Detached: The element has been detached");
+         }
+
+         factoryImpl() {
+             console.log("Factory Impl: Only invoked when creating an event using" +
+                 " the constructor.")
+         }
+
+         attributeChanged(attrName, oldVal, newVal) {
+             console.log("AttributeChanged: Attribute " + attrName +
+                 " oldValue: " + oldVal + " newValue: " + newVal);
+         }
+
+         messageChanged( newVal, oldVal ){
+             console.log("MessageChanged:" + " oldValue: " + oldVal + " newValue: " + newVal);
+         }
+
+         headerTapped(){
+             console.log("HEADER TAPPED!!!");
+         }
+
+         regularTap(){
+             console.log("YOU TAPPED THE CUSTOM ELEMENT!!!");
+         }
+
+         subelementTap(){
+             console.log("SUBELEMENT TAP!!!");
+         }
+    }
+
+    Polymer( Hello )
+</script>

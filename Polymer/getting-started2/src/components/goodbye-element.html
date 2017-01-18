@@ -1,0 +1,22 @@
+<dom-module id="goodbye-element">
+    <template id="">
+
+    </template>
+</dom-module>
+
+
+<script type="text/javascript">
+
+    class Goodbye {
+        beforeRegister() {
+            this.is = "hello-element";
+            this.properties = {
+                message: {
+                    type: String,
+                    value: "Default"
+                }
+            }
+    }
+
+    Polymer( Goodbye )
+</script>

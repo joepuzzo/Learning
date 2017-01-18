@@ -10,6 +10,7 @@ describe("Hello World", function() {
     it("says hello Joe"), function() { 
         // You can have custom matchers ( this is not an example of one though )
         expect( helloName( "Joe") ).toEqual("Hello Joe");
+        console.log("Hello WHAT THE FUCK!");
     }
     // Example of a different matcher
     it("says world", function() {

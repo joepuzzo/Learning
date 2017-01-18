@@ -1,0 +1,19 @@
+{
+  "name": "app-wct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "wct"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sauce-connect-launcher": "^0.16.0",
+    "wct-sauce": "^1.8.4",
+    "web-component-tester": "^4.3.4"
+  }
+}

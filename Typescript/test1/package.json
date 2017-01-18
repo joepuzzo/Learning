@@ -1,0 +1,23 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "johnny-five": "^0.10.6"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/johnny-five": "0.0.30",
+    "@types/node": "^6.0.53",
+    "typescript": "^2.1.4"
+  }
+}
